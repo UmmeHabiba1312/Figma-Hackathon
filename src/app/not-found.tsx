@@ -9,7 +9,7 @@ const NotFound = () => {
         <h3 className='text-7xl font-bold flex justify-center mt-[80px]'>404 Not Found</h3>
         <p className='flex justify-center mt-[20px]'>Your visited page not found. You may go home page.</p>
 <Link href='/' className='flex justify-center'>        
-<Button variant="outline" className='bg-[#029FAE] h-[60px]   w-[188px] mt-10 flex justify-center items-center text-white font-bold hover:text-white hover:bg-[#d34c4c]'>Back to home page</Button>   
+<Button variant="outline" className='bg-[#029FAE] h-[60px]   w-[188px] mt-10 flex justify-center items-center text-white font-bold hover:text-white hover:bg-black rounded-[6px] mb-[40px]'>Back to home page</Button>   
 </Link>
     </main>
   )
