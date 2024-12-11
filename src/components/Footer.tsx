@@ -42,7 +42,7 @@ const Footer = () => {
              
           </div>
           </div>
-          <div className='mt-2'>
+          <div className='mt-14 sm:mt-2'>
             <p className="text-[#babbbd] "> Category</p>
             <p className="mt-2 hover:underline border-cyan-500 hover:text-cyan-500">Sofa</p>
             <p className="mt-2 hover:underline border-cyan-500 hover:text-cyan-500">Arm Chair</p>
@@ -51,7 +51,7 @@ const Footer = () => {
             <p className="mt-2 hover:underline border-cyan-500 hover:text-cyan-500">Wooden Chair</p>
             <p className="mt-2 hover:underline border-cyan-500 hover:text-cyan-500">Park Bench</p>
           </div>
-          <div className='mt-2'>
+          <div className='mt-14 sm:mt-2'>
             <p className="text-[#babbbd] ">Suuport</p>
             <p className="mt-2   hover:text-cyan-500"><Link href='/'>Help & Support</Link></p>
             <p className="mt-2   hover:text-cyan-500"><Link href='/'>Tearms & Conditions</Link></p>

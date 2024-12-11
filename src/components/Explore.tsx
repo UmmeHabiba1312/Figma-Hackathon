@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Explore = () => {
   return (
-    <main className="max-w-screen-2xl mx-auto px-4 lg:px-8 h-auto mt-[140px] mb-[80px] flex flex-col lg:flex-row gap-[15px]">
+    <main className="max-w-screen-2xl mx-auto px-6 lg:px-8 h-auto mt-[140px] mb-[80px] flex flex-col lg:flex-row gap-[15px]">
       {/* Left Section */}
       <div className="left w-full lg:w-[50%]">
         <Image

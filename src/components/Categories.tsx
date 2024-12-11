@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const Categories = () => {
   return (
-    <main className="max-w-screen-2xl mx-auto w-full mt-[60px] px-4 sm:px-6 lg:px-8 mb-[60px]">
+    <main className="max-w-screen-2xl mx-auto w-full mt-[60px] px-6 sm:px-6 lg:px-8 mb-[60px]">
       <h2
         className={`${inter.className} text-[32px] font-medium leading-[35px] text-[#272343] mt-[50px]`}
       >

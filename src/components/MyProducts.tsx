@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 const MyProducts = () => {
   return (
-    <main className="max-w-screen-2xl mx-auto mt-[60px] px-4 sm:px-4 lg:px-8">
+    <main className="max-w-screen-2xl mx-auto mt-[60px] px-6 sm:px-4 lg:px-8">
       <h2
         className={`${inter.className} text-[32px] font-medium leading-[35px] text-[#272343] mt-[50px]`}
       >
@@ -16,13 +16,13 @@ const MyProducts = () => {
 
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[35px] mt-[80px]">
         {/* Product 1 */}
-        <div className="group overflow-hidden rounded-[6px] shadow-lg bg-white hover:shadow-xl transition-all duration-300">
-          <div className="relative w-full h-[250px] flex justify-center items-center">
+        <div className="group overflow-hidden rounded-[6px]  bg-white hover:shadow-xl transition-all duration-300">
+          <div className="relative w-full h-[auto] sm:h-[250px] flex justify-center items-center">
             <button className="absolute left-2 top-2 bg-[#01AD5A] text-white px-4 py-2 rounded-[4px] text-sm">
               New
             </button>
             <Image
-              className="w-full h-[250px] object-cover"
+              className="w-full sm:h-[250px] h-[300px]  object-cover"
               height={250}
               width={250}
               src="/product1.png"
@@ -44,13 +44,13 @@ const MyProducts = () => {
         </div>
 
         {/* Product 2 */}
-        <div className="group overflow-hidden rounded-[6px] shadow-lg bg-white hover:shadow-xl transition-all duration-300">
-          <div className="relative w-full h-[250px] flex justify-center items-center">
+        <div className="group overflow-hidden rounded-[6px]  bg-white hover:shadow-xl transition-all duration-300">
+          <div className="relative w-full h-[auto] sm:h-[250px] flex justify-center items-center">
             <button className="absolute left-4 top-4 bg-[#F5813F] text-white px-4 py-2 rounded-lg text-sm">
               Sales
             </button>
             <Image
-              className="w-full h-[250px] object-cover"
+              className="w-full sm:h-[250px] h-[300px] object-cover"
               height={250}
               width={250}
               src="/product2.png"
@@ -72,10 +72,10 @@ const MyProducts = () => {
         </div>
 
         {/* Product 3 */}
-        <div className="group overflow-hidden rounded-[6px] shadow-lg bg-white hover:shadow-xl transition-all duration-300">
-          <div className="relative w-full h-[250px] flex justify-center items-center">
+        <div className="group overflow-hidden rounded-[6px]  bg-white hover:shadow-xl transition-all duration-300">
+          <div className="relative w-full h-[auto] sm:h-[250px] flex justify-center items-center">
             <Image
-              className="w-full h-[250px] object-cover"
+              className="w-full sm:h-[250px] h-[300px] object-cover"
               height={250}
               width={250}
               src="/product3.png"
@@ -97,10 +97,10 @@ const MyProducts = () => {
         </div>
 
         {/* Product 4 */}
-        <div className="group overflow-hidden rounded-[6px] shadow-lg bg-white hover:shadow-xl transition-all duration-300">
-          <div className="relative w-full h-[250px] flex justify-center items-center">
+        <div className="group overflow-hidden rounded-[6px]  bg-white hover:shadow-xl transition-all duration-300">
+          <div className="relative w-full h-[auto] sm:h-[250px] flex justify-center items-center">
             <Image
-              className="w-full h-[250px] object-cover"
+              className="w-full sm:h-[250px] h-[340px] object-cover"
               height={250}
               width={250}
               src="/product4.png"

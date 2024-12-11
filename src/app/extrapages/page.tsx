@@ -8,14 +8,14 @@ const page = () => {
       <div className='h-auto w-auto mt-[60px] mb-[60px] lg:flex'>
         <div className="one flex-1 h-auto">
           <Image
-          className='h-[607px] w-[675px] object-cover rounded-[10px]'
+          className='h-[607px] sm:w-[675px] w-auto object-cover rounded-[10px]'
           height={100}
           width={100}
           src='/product4.png'
           alt='hero'/>
         </div>
-        <div className="two h-auto flex-1 pl-[75px] pt-[80px] lg:pt-0">
-          <h2 className='text-[#272343] text-[60px] leading-[66px] '>Library Stool Chair</h2>
+        <div className="two h-auto flex-1 sm:pl-[75px] pl-[30px] pt-[80px] lg:pt-0">
+          <h2 className='text-[#272343] text-[40px] sm:text-[60px] leading-[66px] '>Library Stool Chair</h2>
           <button className='h-[44px] w-[144px] bg-[#029FAE] rounded-full text-white mt-[50px]'>{`$20.00 USD`}</button>
           <hr className='mt-[40px]'/>
           <p className='text-[22px] leading-[33px] text-[#272343] mt-[70px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing</p>
@@ -26,7 +26,7 @@ const page = () => {
 
       {/* Feature products */}
       <div className='h-auto w-full'>
-      <div className='flex justify-between px-8'>
+      <div className='flex justify-between sm:px-8 px-6'>
         <h2 className='text-[28px] leading-[34px] text-[#000000]'>Featured Products</h2>
         {/* Submit Button */}
         <button
@@ -38,16 +38,16 @@ const page = () => {
         </div>
 
 {/* cards  */}
-<div className='h-auto w-full grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  mt-[100px] '>
+<div className='h-auto w-full grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  mt-[100px] px-6 sm:px8 '>
   {/* one */}
  <div>
  <Image
-  className='h-[286px] w-[240px] rounded-[6px]'
+  className='h-[286px] sm:sm:w-[240px]  w-full rounded-[6px]'
   height={100}
   width={100}
   src='/insta1.png'
   alt='ProductImg'/>
-  <div className='flex justify-between w-[240px] h-auto mt-3'>
+  <div className='flex justify-between sm:sm:w-[240px]  w-full h-auto mt-3'>
     <span className='text-[16px] leading-[20px]'>Library Stool Chair</span>
     <span className='text-[#0000000] tet-[14px] leading-[17px]'>{`$99`}</span>
   </div>
@@ -56,12 +56,12 @@ const page = () => {
   {/* two */}
   <div>
  <Image
-  className='h-[286px] w-[240px] rounded-[6px]'
+  className='h-[286px] sm:w-[240px] w-full rounded-[6px]'
   height={100}
   width={100}
   src='/insta2.png'
   alt='ProductImg'/>
-  <div className='flex justify-between w-[240px] h-auto mt-3'>
+  <div className='flex justify-between sm:w-[240px] w-full h-auto mt-3'>
     <span className='text-[16px] leading-[20px]'>Library Stool Chair</span>
     <span className='text-[#0000000] tet-[14px] leading-[17px]'>{`$99`}</span>
   </div>
@@ -71,12 +71,12 @@ const page = () => {
 {/* threee */}
 <div>
  <Image
-  className='h-[286px] w-[240px] rounded-[6px]'
+  className='h-[286px] sm:w-[240px] w-full rounded-[6px]'
   height={100}
   width={100}
   src='/product4.png'
   alt='ProductImg'/>
-  <div className='flex justify-between w-[240px] h-auto mt-3'>
+  <div className='flex justify-between sm:w-[240px] w-full h-auto mt-3'>
     <span className='text-[16px] leading-[20px]'>Library Stool Chair</span>
     <span className='text-[#0000000] tet-[14px] leading-[17px]'>{`$99`}</span>
   </div>
@@ -85,12 +85,12 @@ const page = () => {
 {/* four */}
 <div>
  <Image
-  className='h-[286px] w-[240px] rounded-[6px]'
+  className='h-[286px] sm:w-[240px] w-full rounded-[6px]'
   height={100}
   width={100}
   src='/product1.png'
   alt='ProductImg'/>
- <div className='flex justify-between w-[240px] h-auto mt-3'>
+ <div className='flex justify-between sm:w-[240px] w-full h-auto mt-3'>
     <span className='text-[16px] leading-[20px]'>Library Stool Chair</span>
     <span className='text-[#0000000] tet-[14px] leading-[17px]'>{`$99`}</span>
   </div>
@@ -100,12 +100,12 @@ const page = () => {
 {/* six */}
 <div>
  <Image
-  className='h-[286px] w-[240px] rounded-[6px]'
+  className='h-[286px] sm:w-[240px] w-full rounded-[6px]'
   height={100}
   width={100}
   src='/cat3.png'
   alt='ProductImg'/>
-  <div className='flex justify-between w-[240px] h-auto mt-3'>
+  <div className='flex justify-between sm:w-[240px] w-full h-auto mt-3'>
     <span className='text-[16px] leading-[20px]'>Library Stool Chair</span>
     <span className='text-[#0000000] tet-[14px] leading-[17px]'>{`$99`}</span>
   </div>
