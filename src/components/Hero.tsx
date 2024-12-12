@@ -9,7 +9,7 @@ const Hero = () => {
     <main className='h-auto lg:h-[850px] w-full mx-auto max-w-screen-2xl bg-[#f0f2f3] flex flex-col lg:flex-row items-center px-4 sm:px-10 lg:px-0'>
 
       {/* Left Section */}
-      <div className='flex-1 flex flex-col justify-center text-center lg:text-left mt-3 lg:mt-0'>
+      <div className='flex-1 flex flex-col justify-center text-center lg:text-left mt-3 lg:mt-0 lg:pl-7'>
         <h4 className={`${inter.className} text-[14px] leading-[14px] text-[#272343]`}>
           Welcome to Chairy
         </h4>
