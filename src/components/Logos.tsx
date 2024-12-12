@@ -18,7 +18,7 @@ const Logos = () => {
           className='w-[107px] h-[109px] object-cover'
           height={100}
           width={100}
-          src='/logo7.png'
+          src='/logoiiiiii.png'
           alt='logo'
         />
         {/* Logo 3 */}
@@ -26,7 +26,7 @@ const Logos = () => {
           className='w-[135px] h-[139px] object-cover'
           height={100}
           width={100}
-          src='/logo6.png'
+          src='/logoiiiii.png'
           alt='logo'
         />
         {/* Logo 4 */}
@@ -34,7 +34,7 @@ const Logos = () => {
           className='h-[65px] w-[63px] object-cover'
           height={100}
           width={100}
-          src='/logo5.png'
+          src='/logoiiii.png'
           alt='logo'
         />
         {/* Logo 5 */}
@@ -42,7 +42,7 @@ const Logos = () => {
           className='w-[98px] h-[101px] object-cover'
           height={100}
           width={100}
-          src='/logo4.png'
+          src='/logoiii.png'
           alt='logo'
         />
         {/* Logo 6 */}
@@ -50,7 +50,7 @@ const Logos = () => {
           className='w-[113px] h-[115px] object-cover'
           height={100}
           width={100}
-          src='/logo3.png'
+          src='/logoii.png'
           alt='logo'
         />
         {/* Logo 7 */}
@@ -58,7 +58,7 @@ const Logos = () => {
           className='w-[84px] h-[87px] object-cover'
           height={100}
           width={100}
-          src='/logo2.png'
+          src='/logoi.png'
           alt='logo'
         />
       </div>
