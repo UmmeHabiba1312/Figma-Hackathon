@@ -28,7 +28,7 @@ const Hero = () => {
       {/* Right Section */}
       <div className='flex-1 h-auto w-auto flex justify-center items-center mt-6 lg:mt-0'>
         <Image
-          className='h-auto w-full sm:w-[404px] md:w-[554px] lg:h-[804px] lg:w-[650px] '
+          className='h-auto w-full sm:w-[404px] md:w-[554px] lg:h-[584px] lg:w-[434px] '
           height={100}
           width={500}
           src='/hero.png'
