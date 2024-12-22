@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 const Logos = () => {
   return (
-    <main className='max-w-screen-2xl mx-auto mt-[60px] mb-[60px] px-4 sm:px-8 lg:px-16'>
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-4 items-center justify-center">
+    <main className='max-w-screen-2xl overflow-x-hidden mx-auto mt-[60px] mb-[60px] px-4 sm:px-8 lg:px-16'>
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-5 items-center ">
         {/* Logo 1 */}
         <Image
           className='w-[85px] h-[87px] object-cover'
@@ -31,7 +31,7 @@ const Logos = () => {
         />
         {/* Logo 4 */}
         <Image
-          className='h-[65px] w-[63px] object-cover'
+          className='w-[65px] h-[63px] object-cover'
           height={100}
           width={100}
           src='/logoiiii.png'

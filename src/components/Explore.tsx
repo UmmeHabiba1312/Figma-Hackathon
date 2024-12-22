@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Explore = () => {
   return (
-    <main className="max-w-screen-2xl mx-auto px-6 lg:px-8 h-auto mt-[140px] mb-[80px] flex flex-col lg:flex-row gap-[15px]">
+    <main className="max-w-screen-2xl mx-auto overflow-x-hidden px-4 lg:px-8 h-auto mt-[140px] mb-[80px] flex flex-col lg:flex-row gap-[15px]">
       {/* Left Section */}
       <div className="left w-full lg:w-[50%]">
         <Image
@@ -23,7 +23,7 @@ const Explore = () => {
             className="w-full h-auto sm:h-[300px] lg:h-[312px] object-cover rounded-[10px]"
             height={100}
             width={100}
-            src="/product4.png"
+            src="/product2.png"
             alt="img"
           />
         </div>

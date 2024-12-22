@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <main className='h-auto lg:h-[850px] w-full mx-auto max-w-screen-2xl bg-[#f0f2f3] flex flex-col lg:flex-row items-center px-4 sm:px-10 lg:px-0'>
+    <main className='h-auto lg:h-[850px] w-full mx-auto max-w-screen-2xl overflow-x-hidden bg-[#f0f2f3] flex flex-col lg:flex-row items-center px-4 sm:px-10 lg:px-0'>
 
       {/* Left Section */}
       <div className='flex-1 flex flex-col justify-center text-center lg:text-left mt-3 lg:mt-0 lg:pl-7'>
@@ -19,7 +19,7 @@ const Hero = () => {
           Best Furniture Collection for your interior.
         </h2>
         <button
-          className='rounded-[8px] h-[52px] w-full sm:w-[171px] text-[#FFFFFF] mt-6 sm:mt-[30px] px-4 sm:px-[24px] py-2 flex justify-center items-center bg-[#029FAE] text-[16px] leading-[17px]'
+          className='rounded-[8px] h-[52px] w-full sm:w-[171px] text-[#FFFFFF] mt-6 sm:mt-[30px] px-4 sm:px-[24px] py-2 flex justify-center items-center bg-[#029FAE] hover:bg-[#3d6f75] text-[16px] leading-[17px]'
         >
           Shop Now <IoMdArrowForward className='ml-2' />
         </button>
@@ -28,9 +28,9 @@ const Hero = () => {
       {/* Right Section */}
       <div className='flex-1 h-auto w-auto flex justify-center items-center mt-6 lg:mt-0'>
         <Image
-          className='h-auto w-full sm:w-[404px] md:w-[554px] lg:h-[804px] lg:w-[650px] '
+          className='h-auto w-full sm:w-[404px] md:w-[554px] lg:h-[584px] lg:w-[434px] '
           height={100}
-          width={500}
+          width={434}
           src='/hero.png'
           alt='hero'
         />

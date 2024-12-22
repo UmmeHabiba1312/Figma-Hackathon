@@ -10,7 +10,7 @@ import { RiLinkedinBoxLine } from 'react-icons/ri'
 const Footer = () => {
   return (
     <main className="max-w-screen-2xl mx-auto h-auto">
-      <hr className='border-gray-700'/>
+      <hr className='border-[#e3e2e2]'/>
     <div className="mt-[30px] ">
      
       {/* <hr className="mt-8 border-gray-700" /> */}
@@ -32,12 +32,22 @@ const Footer = () => {
             <p className='mt-7 text-[#272343] leading-[30px]'>
             Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum.
             Cras egestas purus             </p>
-            <div className="flex gap-2 mg:gap-4 mt-8 text-3xl ">
-            <FaInstagram className='hover:text-cyan-600 text-gray-600'/>
-            <TiSocialFacebookCircular className='hover:text-cyan-600 text-gray-600'/>
-            <FaTwitter className='hover:text-cyan-600 text-gray-600'/>
-            <AiOutlineYoutube className='hover:text-cyan-600 text-gray-600'/>
-            <RiLinkedinBoxLine className='hover:text-cyan-600 text-gray-600'/>
+            <div className="flex gap-2 mg:gap-4 mt-8 text-3xl">
+              <div className='hover:border-[1px] p-2 flex justify-center items-center hover:border-cyan-600 h-[38px] w-[38px] rounded-full'>
+              <FaInstagram className='hover:text-cyan-600 h-[18px] w-[18px]   hover:border-cyan-600 text-gray-600'/>
+              </div>
+              <div className='hover:border-[1px] p-2 flex justify-center items-center hover:border-cyan-600 h-[38px] w-[38px] rounded-full'>
+            <TiSocialFacebookCircular className='hover:text-cyan-600 h-[18px] w-[18px]  text-gray-600'/>
+            </div>
+            <div className='hover:border-[1px] p-2 flex justify-center items-center hover:border-cyan-600 h-[38px] w-[38px] rounded-full'>
+            <FaTwitter className='hover:text-cyan-600 h-[18px] w-[18px]  text-gray-600'/>
+            </div>
+            <div className='hover:border-[1px] p-2 flex justify-center items-center hover:border-cyan-600 h-[38px] w-[38px] rounded-full'>
+            <AiOutlineYoutube className='hover:text-cyan-600 h-[18px] w-[18px]  text-gray-600'/>
+            </div>
+            <div className='hover:border-[1px] p-2 flex justify-center items-center hover:border-cyan-600 h-[38px] w-[38px] rounded-full'>
+            <RiLinkedinBoxLine className='hover:text-cyan-600 h-[18px] w-[18px]  text-gray-600'/>
+            </div>
             
              
           </div>
@@ -78,7 +88,7 @@ const Footer = () => {
         </div>
       </div>
   
-      <hr className="border-gray-700" />
+      <hr className="border-[#e3e2e2]" />
   
       {/* Footer Bottom Section */}
       <div className="flex flex-col md:flex-row justify-between items-center text-sm px-4 py-4">
@@ -89,7 +99,7 @@ const Footer = () => {
         className='h-[27px] w-[227px] object-cover'
         height={100}
         width={100}
-        src='/footer.png'
+        src='/footers.png'
         alt='footerImg'/>
       </div>
     </div>

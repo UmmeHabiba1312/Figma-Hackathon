@@ -101,7 +101,7 @@ const Header = () => {
             <Link
               key={item.path}
               href={item.path}
-              className={`text-[14px] leading-[15px] cursor-pointer hover:text-[#007580] ${
+              className={`text-[14px] leading-[15px] font-medium cursor-pointer hover:text-[#007580] ${
                 typeof window !== 'undefined' &&
                 window.location.pathname === item.path
                   ? 'text-[#007580]'

@@ -6,12 +6,12 @@ import { FaRegCheckCircle } from 'react-icons/fa'
 import { VscFolder } from 'react-icons/vsc'
 const page = () => {
   return (
-    <main className='mx-auto max-w-screen-2xl h-auto mb-[80px]'>
+    <main className='mx-auto max-w-screen-2xl h-auto mb-[40px]'>
 
  {/* about hero */}
- <div className='h-auto w-full flex flex-col lg:flex-row mt-[100px] gap-[20px]'>
+ <div className='h-auto w-full flex flex-col lg:flex-row mt-[60px] gap-[20px]'>
   {/* About Us Section */}
-  <div className="one flex-1 h-auto bg-[#007580] text-white px-[20px] py-[40px]">
+  <div className="one flex-1 h-[500px] lg:h-[478px] bg-[#007580] text-white px-[20px] py-[40px]">
     <h2 className='text-[24px] lg:text-[32px] leading-[30px] lg:leading-[38px] font-bold mt-[20px] lg:mt-[80px]'>
       About Us - Comforty
     </h2>
@@ -24,9 +24,9 @@ const page = () => {
   </div>
 
   {/* Image Section */}
-  <div className="two flex-1 h-auto">
+  <div className="two flex-1 h-[500px] lg:h-[478px]">
     <Image
-      className='h-[300px] lg:h-[478px] w-full object-cover'
+      className='h-[500px] lg:h-[478px] w-full object-cover'
       height={500}
       width={500}
       src='/product1.png'
@@ -119,7 +119,7 @@ const page = () => {
     </div>
 
     {/* Right Div */}
-    <div className="flex flex-col lg:flex-row lg:gap-[15px] w-full lg:max-w-[40%]">
+    <div className="flex flex-col h-auto lg:h-[462px]  lg:flex-row lg:gap-[15px] w-full lg:max-w-[40%]">
       
       {/* Product 1 */}
       <div className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:w-[305px] lg:h-[375px] mb-[15px] lg:mb-0">
@@ -127,7 +127,7 @@ const page = () => {
           className="h-full w-full object-cover rounded-lg"
           height={500}
           width={500}
-          src="/product2.png"
+          src="/product3.png"
           alt="Img"
         />
         <p className="text-[18px] sm:text-[20px] leading-[26px] sm:leading-[28px] text-[#2A254B] font-semibold mt-[10px]">
@@ -144,7 +144,7 @@ const page = () => {
           className="h-full w-full object-cover rounded-lg"
           height={500}
           width={500}
-          src="/product2.png"
+          src="/product1.png"
           alt="Img"
         />
         <p className="text-[18px] sm:text-[20px] leading-[26px] sm:leading-[28px] text-[#2A254B] font-semibold mt-[10px]">

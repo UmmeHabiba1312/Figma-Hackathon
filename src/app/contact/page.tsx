@@ -23,6 +23,7 @@ const ContactPage = () => {
   };
 
   return (
+    <>
     <div className="max-w-screen-lg mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold text-center mb-6 text-[#072343]">Get In Touch With Us</h1>
       <p className="text-center text-[#9F9F9F] mb-12 text-[16px] leading-[24px] lg:mx-44 mx-4 md:mx-20 flex justify-center">
@@ -147,8 +148,9 @@ const ContactPage = () => {
         </form>
       
       </div>
-      <BeforFoter/>
     </div>
+    <BeforFoter/>
+    </>
   );
 };
 

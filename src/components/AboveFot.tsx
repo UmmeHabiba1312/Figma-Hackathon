@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 const BeforFoter = () => {
   return (
-    <main className="mt-[60px]">
-      <div className="flex justify-center h-auto items-center bg-[#F4F4F4]">
-        <div className="max-w-screen-xl w-full h-[270px] items-center flex px-4 lg:px-16 py-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
+    <main className="mt-[60px] w-full">
+      <div className="flex justify-around w-full h-auto items-center  ">
+        <div className="max-w-screen-xl w-full h-auto sm:h-[270px] items-center bg-[#F4F4F4] grid grid-cols-1 gap-8 sm:gap-0 sm:grid-cols-2 lg:grid-cols-3 px-4 lg:px-16 py-8">
+          
             {/* High Quality */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4  justify-center">
               <Image
                 className="h-[60px] w-[60px]"
                 height={60}
@@ -23,7 +23,7 @@ const BeforFoter = () => {
             </div>
 
             {/* Warranty Protection */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4  justify-center">
               <Image
                 className="h-[60px] w-[60px]"
                 height={60}
@@ -38,7 +38,7 @@ const BeforFoter = () => {
             </div>
 
             {/* 24 / 7 Support */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4  justify-center">
               <Image
                 className="h-[60px] w-[60px]"
                 height={60}
@@ -53,7 +53,7 @@ const BeforFoter = () => {
             </div>
           </div>
         </div>
-      </div>
+      
     </main>
   )
 }
