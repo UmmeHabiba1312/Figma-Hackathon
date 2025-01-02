@@ -8,22 +8,24 @@ const ProFooter = () => {
         Or subscribe to the newsletter
       </h2>
       <div className="flex justify-center mt-[50px] lg:px-8 px-4">
-        <form className="flex items-center gap-4">
-          {/* Email Input */}
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="border-b-2 border-[#000000] bg-[#f4f4f5] focus:outline-none focus:border-[#029FAE] transition-all duration-300 sm:w-[643px] w-full pl-3"
-          />
+      <form className="flex items-center gap-4">
+  {/* Email Input */}
+  <input
+    type="email"
+    placeholder="Enter your email"
+    className="border-b-2 border-[#000000] bg-[#f4f4f5] focus:outline-none focus:border-[#029FAE] transition-all duration-300 sm:w-[643px] w-full pl-3"
+    required
+  />
 
-          {/* Submit Button */}
-          <button
-            type="submit"
-            className="border-b-2 hover:border-[#029FAE] border-[#000000] text-gray-700 focus:border-[#029FAE] focus:outline-none transition-all duration-300 px-4"
-          >
-            Submit
-          </button>
-        </form>
+  {/* Submit Button */}
+  <button
+    type="submit"
+    className="border-b-2 hover:border-[#029FAE] border-[#000000] text-gray-700 focus:border-[#029FAE] focus:outline-none transition-all duration-300 px-4"
+  >
+    Submit
+  </button>
+</form>
+
       </div>
 
       {/* Instagram section */}

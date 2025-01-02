@@ -3,14 +3,23 @@ import { IoMdArrowForward } from 'react-icons/io';
 import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 import Image from 'next/image';
+import { client } from '@/sanity/lib/client';
+import { urlFor } from '@/sanity/lib/image';
 
-const Hero = () => {
+async function getData(){
+  const query = "*[_type == 'heroImage'][0]";
+  const data = await client.fetch(query);
+  return data;
+}
+
+const Hero = async() => {
+  const data = await getData();
   return (
-    <main className='h-auto lg:h-[850px] w-full mx-auto max-w-screen-2xl overflow-x-hidden bg-[#f0f2f3] flex flex-col lg:flex-row items-center px-4 sm:px-10 lg:px-0'>
+    <main className='h-auto lg:h-[850px] w-full rounded-bl-[50px] mx-auto max-w-screen-2xl overflow-x-hidden bg-[#f0f2f3] flex flex-col lg:flex-row items-center px-4 sm:px-10 lg:px-0'>
 
       {/* Left Section */}
       <div className='flex-1 flex flex-col justify-center text-center lg:text-left mt-3 lg:mt-0 lg:pl-7'>
-        <h4 className={`${inter.className} text-[14px] leading-[14px] text-[#272343]`}>
+        <h4 className={`${inter.className} text-[14px] leading-[100%] uppercase tracking-wider font-medium lg:pl-1  text-[#272343]`}>
           Welcome to Chairy
         </h4>
         <h2
@@ -19,7 +28,7 @@ const Hero = () => {
           Best Furniture Collection for your interior.
         </h2>
         <button
-          className='rounded-[8px] h-[52px] w-full sm:w-[171px] text-[#FFFFFF] mt-6 sm:mt-[30px] px-4 sm:px-[24px] py-2 flex justify-center items-center bg-[#029FAE] hover:bg-[#3d6f75] text-[16px] leading-[17px]'
+          className='rounded-[8px] h-[52px] w-full sm:w-[171px] text-[#FFFFFF] mt-6 sm:mt-[30px] px-4 sm:px-[24px] py-2 flex justify-center items-center bg-[#029FAE] hover:bg-[#272343] text-[16px] leading-[17px]'
         >
           Shop Now <IoMdArrowForward className='ml-2' />
         </button>
@@ -31,8 +40,9 @@ const Hero = () => {
           className='h-auto w-full sm:w-[404px] md:w-[554px] lg:h-[584px] lg:w-[434px] '
           height={100}
           width={434}
-          src='/hero.png'
+          src={urlFor(data.image1).url()}
           alt='hero'
+          priority
         />
       </div>
     </main>

@@ -17,16 +17,27 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Inter } from 'next/font/google';
+import { useShoppingCart } from 'use-shopping-cart';
 const inter = Inter({ subsets: ['latin'] });
 
-const Header = () => {
+
+
+
+
+
+
+
+const Header = (props:any) => {
+  const { cartCount } = useShoppingCart();
+  // const { cart } = useCart(); // Destructure cart from the context
+  // const cartCount = cart.length; // Calculate the cart count
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
     { label: 'Home', path: '/' },
     { label: 'Shop', path: '/shop' },
     { label: 'Product', path: '/product' },
-    { label: 'Pages', path: '/extrapages' },
+    { label: 'Pages', path: '/extrapages/slug' },
     { label: 'About', path: '/about' },
   ];
 
@@ -65,6 +76,7 @@ const Header = () => {
       </div>
 
       {/* Second Header Part */}
+      <Link href="/">
       <div className="h-[84px] bg-[#f0f2f3] w-full flex justify-between items-center px-4 lg:px-8">
         {/* Logo */}
         <div className="flex gap-[8px] items-center">
@@ -72,7 +84,7 @@ const Header = () => {
             className="h-[40px] w-[40px]"
             height={100}
             width={100}
-            src="/mainLogo.png"
+            src='/mainLogo.png'
             alt="logo"
           />
           <h1
@@ -84,15 +96,17 @@ const Header = () => {
 
         {/* Cart */}
         <Link href='/cart'>
-        <button className="flex gap-[12px] w-[120px] h-[44px] bg-white rounded-[4px] items-center justify-center border-[1px]">
-          <FiShoppingCart className="h-[22px] w-[22px] text-[#272343]" />
-          <span className="text-[#272343]">Cart</span>
-          <span className="h-[20px] w-[20px] bg-[#007580] text-[10px] leading-[10px] flex justify-center items-center p-2 rounded-full text-[#FFFFFF]">
-            2
-          </span>
-        </button></Link>
+          <button className="flex gap-[12px] w-[120px] h-[44px] bg-white rounded-[4px] items-center justify-center border-[1px]">
+            <FiShoppingCart className="h-[22px] w-[22px] text-[#272343]" />
+            <span className="text-[#272343]">Cart</span>
+            <span className="h-[20px] w-[20px] bg-[#007580] text-[10px] leading-[10px] flex justify-center items-center p-2 rounded-full text-[#FFFFFF]">
+              {cartCount || 0} {/* Display dynamic cart count */}
+            </span>
+          </button>
+        </Link>
       </div>
-
+      </Link>
+      
       {/* Third Header Part */}
       <div className="h-[74px] w-full bg-[#FFFFFF] text-[#636270] flex justify-between items-center px-4 lg:px-8">
         {/* Menu */}

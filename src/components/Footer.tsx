@@ -74,14 +74,15 @@ const Footer = () => {
         <div className="mt-8 lg:mt-2 lg:w-[30%]">
           <h2 className=" dark:text-cyan-500 text-[#babbbd]  uppercase">NewsLetter</h2>
           <div className="flex mt-4 gap-4">
-            <div className="relative w-full max-w-sm ">
-              <IoMailSharp className="absolute left-3 top-1/2 transform -translate-y-1/2 text-2xl  text-white" />
-              <input
-                type="text"
-                placeholder="Enter your Email"
-                className="w-full pl-12 p-3  bg-[#f4f5f5] text-white focus:outline-none rounded-[8px-]"
-              />
-            </div>
+          <div className="relative w-full max-w-sm">
+  <IoMailSharp className="absolute left-3 top-1/2 transform -translate-y-1/2 text-2xl text-gray-400 z-10" />
+  <input
+    type="email"  // Use type="email" for better email handling
+    placeholder="Enter your Email"
+    className="w-full pl-12 p-3 bg-[#f4f5f5] text-[#333] focus:outline-none focus:border-[#029FAE] rounded-[8px-]"
+  />
+</div>
+
             <button className="p-3 bg-cyan-600 text-white font-bold rounded-[8px]">Subscribe</button>
           </div>
           <p className='text-gray-500 mt-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim.</p>

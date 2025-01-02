@@ -4,22 +4,23 @@ import {  PiPlant } from 'react-icons/pi'
 import { TbTruckDelivery } from 'react-icons/tb'
 import { FaRegCheckCircle } from 'react-icons/fa'
 import { VscFolder } from 'react-icons/vsc'
+import Link from 'next/link'
 const page = () => {
   return (
-    <main className='mx-auto max-w-screen-2xl h-auto mb-[40px]'>
+    <main className='mx-auto max-w-screen-2xl h-auto mb-[40px] px-7'>
 
  {/* about hero */}
  <div className='h-auto w-full flex flex-col lg:flex-row mt-[60px] gap-[20px]'>
   {/* About Us Section */}
-  <div className="one flex-1 h-[500px] lg:h-[478px] bg-[#007580] text-white px-[20px] py-[40px]">
-    <h2 className='text-[24px] lg:text-[32px] leading-[30px] lg:leading-[38px] font-bold mt-[20px] lg:mt-[80px]'>
+  <div className="one flex-1 h-[500px] lg:h-[478px] bg-[#007580] text-white px-[20px] py-[20px]">
+    <h2 className='text-[24px] lg:text-[32px] leading-[30px] lg:leading-[38px] font-bold mt-[20px] lg:mt-[40px]'>
       About Us - Comforty
     </h2>
     <p className='mt-[10px] lg:mt-[20px] text-[16px] lg:text-[18px] leading-[20px] lg:leading-[21px]'>
       At Comforty, we believe that the right chair can transform your space and elevate your comfort. Specializing in ergonomic design, premium materials, and modern aesthetics, we craft chairs that seamlessly blend style with functionality.
     </p>
-    <button className='text-[#FFFFFF] h-[48px] lg:h-[56px] rounded-[4px] bg-[#438186] w-[160px] lg:w-[179px] px-[20px] lg:px-[32px] py-[10px] lg:py-[16px] flex justify-center items-center leading-[22px] lg:leading-[24px] text-[14px] lg:text-[16px] mt-[20px] lg:mt-[130px]'>
-      <span className='text-white opacity-100'>View collection</span>
+    <button className='text-[#FFFFFF] h-[48px] lg:h-[56px] rounded-[4px] bg-[#438186] hover:bg-black w-[160px] lg:w-[179px] px-[20px] lg:px-[32px] py-[10px] lg:py-[16px] flex justify-center items-center leading-[22px] lg:leading-[24px] text-[14px] lg:text-[16px] mt-[20px] lg:mt-[130px]'>
+      <Link href="/product"><span  className='text-white opacity-100'>View collection</span></Link>
     </button>
   </div>
 
@@ -45,9 +46,9 @@ const page = () => {
   </h2>
   
   {/* Responsive Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-[20px] h-auto w-full mt-[40px] lg:mt-[60px] px-[20px] lg:px-0">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-4 h-auto w-full mt-[40px] lg:mt-[60px] px-[20px] lg:px-0">
     {/* Card 1 */}
-    <div className="h-auto lg:h-[244px] w-full lg:w-[309px] border-[1px] text-[#007580] rounded-[4px] bg-[#F9F9F9] hover:bg-[#007580] p-[20px] lg:p-[30px] hover:text-white transition-all duration-300">
+    <div className="h-auto lg:h-[244px] w-full lg:w-[290px] border-[1px] text-[#007580] rounded-[4px] bg-[#F9F9F9] hover:bg-[#007580] p-[20px] lg:p-[30px] hover:text-white transition-all duration-300">
       <TbTruckDelivery className="h-[24px] w-[24px] mt-3" />
       <p className="text-[18px] lg:text-[20px] leading-[24px] lg:leading-[28px] mt-4">
         Next day as standard
@@ -58,7 +59,7 @@ const page = () => {
     </div>
 
     {/* Card 2 */}
-    <div className="h-auto lg:h-[244px] w-full lg:w-[309px] border-[1px] text-[#007580] rounded-[4px] bg-[#F9F9F9] hover:bg-[#007580] p-[20px] lg:p-[30px] hover:text-white transition-all duration-300">
+    <div className="h-auto lg:h-[244px] w-full lg:w-[290px] border-[1px] text-[#007580] rounded-[4px] bg-[#F9F9F9] hover:bg-[#007580] p-[20px] lg:p-[30px] hover:text-white transition-all duration-300">
       <FaRegCheckCircle className="h-[24px] w-[24px] mt-3" />
       <p className="text-[18px] lg:text-[20px] leading-[24px] lg:leading-[28px] mt-4">
         Next day as standard
@@ -69,7 +70,7 @@ const page = () => {
     </div>
 
     {/* Card 3 */}
-    <div className="h-auto lg:h-[244px] w-full lg:w-[309px] border-[1px] text-[#007580] rounded-[4px] bg-[#F9F9F9] hover:bg-[#007580] p-[20px] lg:p-[30px] hover:text-white transition-all duration-300">
+    <div className="h-auto lg:h-[244px] w-full lg:w-[290px] border-[1px] text-[#007580] rounded-[4px] bg-[#F9F9F9] hover:bg-[#007580] p-[20px] lg:p-[30px] hover:text-white transition-all duration-300">
       <VscFolder className="h-[24px] w-[24px] mt-3" />
       <p className="text-[18px] lg:text-[20px] leading-[24px] lg:leading-[28px] mt-4">
         Next day as standard
@@ -80,7 +81,7 @@ const page = () => {
     </div>
 
     {/* Card 4 */}
-    <div className="h-auto lg:h-[244px] w-full lg:w-[309px] border-[1px] text-[#007580] rounded-[4px] bg-[#F9F9F9] hover:bg-[#007580] p-[20px] lg:p-[30px] hover:text-white transition-all duration-300">
+    <div className="h-auto lg:h-[244px] w-full lg:w-[290px] border-[1px] text-[#007580] rounded-[4px] bg-[#F9F9F9] hover:bg-[#007580] p-[20px] lg:p-[30px] hover:text-white transition-all duration-300">
       <PiPlant className="h-[24px] w-[24px] mt-3" />
       <p className="text-[18px] lg:text-[20px] leading-[24px] lg:leading-[28px] mt-4">
         Next day as standard
@@ -95,7 +96,7 @@ const page = () => {
 
 
 {/* above popular products */}
-<div className="px-[20px] lg:px-8  mt-[20px] h-auto">
+<div className="px-[20px]  mt-[20px] h-auto">
   <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] leading-[30px] sm:leading-[35px] text-[#272343] ">
     Our Popular Products
   </h2>
