@@ -1,5 +1,6 @@
 import React from 'react';
-import { useCart } from './CartContext'; // Adjust the path as needed
+import { useCart } from '../app/context/CartContext'; // Adjust the path as needed
+import Image from 'next/image';
 
 const ProductCard = ({ product }: any) => {
   const { addToCart } = useCart(); // Using the CartContext to get addToCart function
@@ -10,7 +11,7 @@ const ProductCard = ({ product }: any) => {
 
   return (
     <div className="product-card border p-4 rounded-lg shadow-lg">
-      <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-lg" />
+      <Image src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-lg" />
       <h3 className="text-xl font-semibold mt-2">{product.name}</h3>
       <p className="text-sm text-gray-600">{product.description}</p>
       <p className="text-lg font-bold mt-2">${product.price}</p>

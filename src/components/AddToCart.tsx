@@ -1,4 +1,3 @@
-// AddToCart.tsx
 'use client';
 
 import React from "react";
@@ -6,6 +5,7 @@ import { Button } from "./ui/button";
 import { useShoppingCart } from "use-shopping-cart";
 import { FiShoppingCart } from "react-icons/fi";
 import { urlFor } from "@/sanity/lib/image";
+import { useRouter } from "next/navigation"; // Import useRouter
 
 export interface ProductCart {
   name: string;
@@ -14,7 +14,7 @@ export interface ProductCart {
   image: any;
   currency: string;
   id: string; // Unique identifier for the product
-  price_id?:string;
+  price_id?: string;
 }
 
 const AddToCart = ({
@@ -26,8 +26,8 @@ const AddToCart = ({
   id,
   price_id,
 }: ProductCart) => {
-  const { cartDetails, addItem, setItemQuantity, handleCartClick } =
-    useShoppingCart();
+  const { cartDetails, addItem, setItemQuantity } = useShoppingCart();
+  const router = useRouter(); // Initialize useRouter
 
   const product = {
     id, // This must match the cart's unique identifier field
@@ -36,7 +36,7 @@ const AddToCart = ({
     price,
     image: urlFor(image).url(),
     currency,
-    price_id
+    price_id,
   };
 
   const handleAddToCart = () => {
@@ -51,8 +51,8 @@ const AddToCart = ({
       addItem(product);
     }
 
-    // Optionally, open the cart after adding the item
-    handleCartClick();
+    // Redirect to the cart page
+    router.push("/cart"); // Use router.push to navigate to the cart page
   };
 
   return (

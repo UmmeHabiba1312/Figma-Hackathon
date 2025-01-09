@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductCard from './ProductCard'; // Import ProductCard
-import { useCart } from './CartContext';
+import { useCart } from '../app/context/CartContext';
  // Import useCart to access cart state
 
 const ProductList = () => {

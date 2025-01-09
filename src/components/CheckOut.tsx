@@ -1,40 +1,86 @@
-// "use client"
-// import React from 'react'
-// import { Button } from './ui/button'
-// import { useShoppingCart } from 'use-shopping-cart'
-// import { FiShoppingCart } from 'react-icons/fi'
-// import { urlFor } from '@/sanity/lib/image'
-// import { ProductCart } from './AddToCart'
+"use client";
+import { useState } from "react";
 
-// // export interface ProductCart {
-// //     name: string;
-// //     description: string;
-// //     price: number;
-// //     image: any;
-// //     currency: string;
-// //     price_id: string;
-// // }
+const CheckoutPage = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    address: "",
+    city: "",
+    country: "",
+    paymentMethod: "creditCard",
+  });
 
-// const CheckOutNow = ({currency,description,name,price,image,price_id}:ProductCart) => {
-//     const {checkoutSingleItem} = useShoppingCart()
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Process the payment and order
+    console.log("Order placed successfully", formData);
+    // Redirect to a confirmation page
+  };
 
-//     function buyNow(priceId:string){
-//         checkoutSingleItem(priceId);
-//     }
-//     const product ={
-//         name: name,
-//         description: description,
-//         price: price,
-//         image: urlFor(image).url(),
-//         currency: currency,
-//         id:"product",
-//         price_id : price_id,
-//     };
-//   return (
-//     <Button onClick={()=>{
-//        buyNow(product.price_id);
-//     }} className=' h-[63px] hover:bg-[#272343] w-[212px] rounded-[8px] bg-[#029FAE] text-white flex justify-center items-center mt-[40px] gap-3'><FiShoppingCart className='h-[29px] w-[29px]' /> Add To cart</Button>
-//   )
-// }
+  return (
+    <div className="p-6">
+      <h1 className="text-3xl font-bold text-[#072343] mb-6">Checkout</h1>
+      <form onSubmit={handleSubmit}>
+        <div className="mb-4">
+          <label className="block text-[#072343] font-semibold">Full Name</label>
+          <input
+            type="text"
+            value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            className="w-full p-3 border border-gray-300 rounded-lg"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-[#072343] font-semibold">Address</label>
+          <input
+            type="text"
+            value={formData.address}
+            onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+            className="w-full p-3 border border-gray-300 rounded-lg"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-[#072343] font-semibold">City</label>
+          <input
+            type="text"
+            value={formData.city}
+            onChange={(e) => setFormData({ ...formData, city: e.target.value })}
+            className="w-full p-3 border border-gray-300 rounded-lg"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-[#072343] font-semibold">Country</label>
+          <input
+            type="text"
+            value={formData.country}
+            onChange={(e) => setFormData({ ...formData, country: e.target.value })}
+            className="w-full p-3 border border-gray-300 rounded-lg"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-[#072343] font-semibold">Payment Method</label>
+          <select
+            value={formData.paymentMethod}
+            onChange={(e) => setFormData({ ...formData, paymentMethod: e.target.value })}
+            className="w-full p-3 border border-gray-300 rounded-lg"
+          >
+            <option value="creditCard">Credit Card</option>
+            <option value="paypal">PayPal</option>
+          </select>
+        </div>
+        <button
+          type="submit"
+          className="w-full p-3 bg-[#072343] text-white font-semibold rounded-lg hover:bg-[#054b71]"
+        >
+          Complete Order
+        </button>
+      </form>
+    </div>
+  );
+};
 
-// export default CheckOutNow
+export default CheckoutPage;

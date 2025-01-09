@@ -1,9 +1,11 @@
-"use client";
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { FaHeart } from 'react-icons/fa';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import { useShoppingCart } from 'use-shopping-cart';
+import Link from 'next/link';
 
 const Shop = () => {
   const { cartCount, cartDetails, removeItem, totalPrice } = useShoppingCart();
@@ -21,13 +23,13 @@ const Shop = () => {
               <div key={entry.id} className="flex flex-col md:flex-row items-center gap-8 md:gap-28 border-b pb-6 mb-6">
                 <div className='w-full md:w-[70%] flex gap-4 md:gap-6'>
                   <div className="w-full md:w-1/4">
-                  <Image
-  className="w-full sm:w-[135%] md:w-full max-w-full rounded-lg h-[140px] object-cover"
-  height={100}
-  width={100}
-  src={entry.image as string}
-  alt="photo"
-/>
+                    <Image
+                      className="w-full sm:w-[135%] md:w-full max-w-full rounded-lg h-[140px] object-cover"
+                      height={100}
+                      width={100}
+                      src={entry.image as string}
+                      alt="photo"
+                    />
                   </div>
                   <div className="flex-1 w-full">
                     <h3 className="text-[16px] font-medium tracking-wider text-[#272343]">{entry.name}</h3>
@@ -74,8 +76,8 @@ const Shop = () => {
               <p className="text-base font-semibold">Total</p>
               <p>${totalPrice}</p>
             </div>
-            <button className="w-full mt-6 py-2 px-4 bg-[#029FAE] text-white font-semibold rounded-[30px] hover:bg-teal-600">
-              Member Checkout
+            <button className="w-full mt-6 py-2 px-4 bg-[#029FAE] text-white font-semibold rounded-[30px] hover:bg-[#272343]">
+              <Link href="/checkOut">Member Checkout</Link>
             </button>
           </div>
         </div>
